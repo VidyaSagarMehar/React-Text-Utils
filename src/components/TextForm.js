@@ -34,13 +34,18 @@ export default function TextForm(props) {
 		setText(newText.join(' '));
 	};
 
-	const [text, setText] = useState('Type here');
+	const [text, setText] = useState('');
 	// text = 'new text' // Wrong way
 	// setText('new text')// Correct way to change the state
 
 	return (
 		<>
-			<div className="mb-3 container">
+			<div
+				className="mb-3 container "
+				style={{
+					color: props.mode === 'dark' ? 'white' : 'black',
+				}}
+			>
 				<h1> {props.heading}</h1>
 				<textarea
 					className="form-control"
@@ -48,15 +53,19 @@ export default function TextForm(props) {
 					rows="10"
 					value={text}
 					onChange={handleOnChange}
+					style={{
+						backgroundColor: props.mode === 'dark' ? '#9e9e9e' : 'white',
+						// color: props.mode === 'dark' ? 'white' : 'black',
+					}}
 				></textarea>
-				`
+
 				<button className="btn btn-primary mx-1 my-2" onClick={handleCopy}>
 					Copy
 				</button>
 				<button className="btn btn-primary mx-1 my-2" onClick={handleUpClick}>
 					Conver to Uppercase
 				</button>
-				`
+
 				<button
 					className="btn btn-primary mx-1 my-2"
 					onClick={handleLowerClick}
@@ -82,7 +91,12 @@ export default function TextForm(props) {
 					Remove Extra Space
 				</button>
 			</div>
-			<div className="container my-3">
+			<div
+				className="container my-3"
+				style={{
+					color: props.mode === 'dark' ? 'white' : 'black',
+				}}
+			>
 				<h3>Your text summary</h3>
 				<p>
 					{text.split(' ').length} word and {text.length} characters
@@ -90,7 +104,7 @@ export default function TextForm(props) {
 				<p>{0.008 * text.split(' ').length} Minutes read</p>
 
 				<h3>Preview</h3>
-				<p>{text}</p>
+				<p>{text.length > 0 ? text : 'Enter somthing to preview here'}</p>
 			</div>
 		</>
 	);
