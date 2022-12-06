@@ -5,24 +5,29 @@ export default function TextForm(props) {
 		var text = document.getElementById('exampleFormControlTextarea1');
 		text.select();
 		navigator.clipboard.writeText(text.value);
+		props.showAlert('Text copied to clipboard!', 'success');
 	};
 	const handleUpClick = () => {
 		// console.log('Uppercase was clicked' + text);
 		let newText = text.toUpperCase();
 		setText(newText);
+		props.showAlert('Converted to uppercase!', 'success');
 	};
 	const handleLowerClick = () => {
 		// console.log('Uppercase was clicked' + text);
 		let newText = text.toLocaleLowerCase();
 		setText(newText);
+		props.showAlert('Converted to lowercase!', 'success');
 	};
 
 	const handleClearClick = () => {
 		setText('');
+		props.showAlert('Text cleared!', 'success');
 	};
 	const handleReverseClick = () => {
 		let reverseText = text.split('').reverse().join('');
 		setText(reverseText);
+		props.showAlert('Text has been reversed!', 'success');
 	};
 	const handleOnChange = (event) => {
 		// console.log('Uppercase was clicked');
@@ -32,6 +37,7 @@ export default function TextForm(props) {
 	const handleExtraSpace = () => {
 		let newText = text.split(/[ ]+/);
 		setText(newText.join(' '));
+		props.showAlert('Extra spaces removed!', 'success');
 	};
 
 	const [text, setText] = useState('');
