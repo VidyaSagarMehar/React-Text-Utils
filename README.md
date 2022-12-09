@@ -1,4 +1,4 @@
-[LIVE LINK](https://react-text-utils.vercel.app/)
+[LIVE LINK](https://vidyasagarmehar.github.io/React-Text-Utils/)
 
 
 # Getting Started with Create React App
