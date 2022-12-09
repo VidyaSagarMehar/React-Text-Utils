@@ -5,6 +5,7 @@ export default function TextForm(props) {
 		var text = document.getElementById('exampleFormControlTextarea1');
 		text.select();
 		navigator.clipboard.writeText(text.value);
+		document.getSelection().removeAllRanges();
 		props.showAlert('Text copied to clipboard!', 'success');
 	};
 	const handleUpClick = () => {
@@ -65,32 +66,44 @@ export default function TextForm(props) {
 					}}
 				></textarea>
 
-				<button className="btn btn-primary mx-1 my-2" onClick={handleCopy}>
+				<button
+					disabled={text.length === 0}
+					className="btn btn-primary mx-1 my-2"
+					onClick={handleCopy}
+				>
 					Copy
 				</button>
-				<button className="btn btn-primary mx-1 my-2" onClick={handleUpClick}>
+				<button
+					disabled={text.length === 0}
+					className="btn btn-primary mx-1 my-2"
+					onClick={handleUpClick}
+				>
 					Conver to Uppercase
 				</button>
 
 				<button
+					disabled={text.length === 0}
 					className="btn btn-primary mx-1 my-2"
 					onClick={handleLowerClick}
 				>
 					Conver to Lowercase
 				</button>
 				<button
+					disabled={text.length === 0}
 					className="btn btn-primary mx-1 my-2"
 					onClick={handleClearClick}
 				>
 					Clear TextArea
 				</button>
 				<button
+					disabled={text.length === 0}
 					className="btn btn-primary mx-1 my-2"
 					onClick={handleReverseClick}
 				>
 					Reverse Text
 				</button>
 				<button
+					disabled={text.length === 0}
 					className="btn btn-primary mx-1 my-2"
 					onClick={handleExtraSpace}
 				>
