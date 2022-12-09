@@ -1,5 +1,5 @@
 import './App.css';
-import About from './components/About';
+// import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import React, { useState } from 'react';
@@ -41,7 +41,7 @@ export default function App() {
 					heading="Enter text here to Analyz"
 					mode={mode}
 				/>
-				<About />
+				{/* <About /> */}
 			</div>
 		</>
 	);
