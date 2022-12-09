@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 
 export default function TextForm(props) {
 	const handleCopy = () => {
-		var text = document.getElementById('exampleFormControlTextarea1');
-		text.select();
-		navigator.clipboard.writeText(text.value);
+		navigator.clipboard.writeText(text);
 		document.getSelection().removeAllRanges();
 		props.showAlert('Text copied to clipboard!', 'success');
 	};
@@ -118,7 +116,7 @@ export default function TextForm(props) {
 			>
 				<h3>Your text summary</h3>
 				<p>
-					{text.split(' ').filter((element) => element.length !== 0).length}{' '}
+					{text.split(/\s+/).filter((element) => element.length !== 0).length}{' '}
 					word and {text.length} characters
 				</p>
 				<p>
