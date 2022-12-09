@@ -5,7 +5,7 @@ import TextForm from './components/TextForm';
 import React, { useState } from 'react';
 import Alert from './components/Alert';
 
-function App() {
+export default function App() {
 	const [mode, setMode] = useState('light'); // wether dark mode is enabled or not
 	const [alert, setAlert] = useState(null);
 
@@ -41,10 +41,8 @@ function App() {
 					heading="Enter text here to Analyz"
 					mode={mode}
 				/>
+				<About />
 			</div>
-			<About />
 		</>
 	);
 }
-
-export default App;
