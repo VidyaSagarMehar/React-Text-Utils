@@ -1,7 +1,47 @@
+# Hi, I'm [Vidya Sagar Mehar](https://vidya-sagar-portfolio.netlify.app/) ! 👋
 
 
-# [LIVE LINK](https://react-text-utils.vercel.app/)
+## 🚀 I'm a full-stack developer...
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
+## Project Title - Text Utils 
+This is a React project which allows user to enter text and alalyz it and they can transform their text as they want from the given desired buttons. 😎
+It also have a theme changer mode, so that you can change the theme as you like and by default it has light theme.
+
+## Average time to complete
+####  3 days
+
+
+## Demo | Vercel
+## [LIVE LINK](https://react-text-utils.vercel.app/)
+
+
+## Technology Used
+
+![HTML](https://img.shields.io/badge/FirstTech-ReactJS-purple)
+![HTML](https://img.shields.io/badge/SecondTech-Bootstrap_Components-purple)
+
+## Screenshots
+### Light Mode
+![](./src/Screenshot%201.png)
+
+### Dark Mode
+![](./src/Screenshot%202.png)
+
+
+## Feedback
+
+If you have any feedback, please reach out to me at vidyasagark890@gmail.com
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://vidya-sagar-portfolio.netlify.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Cherry_Reyans)
+[![portfolio](https://img.shields.io/badge/FindCoder_portfolio-5A20CB??style=for-the-badge&logo=appveyor)](https://www.findcoder.io/u/vidyasagarmehar)
+
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 # Getting Started with Create React App
 
