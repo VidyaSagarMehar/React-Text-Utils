@@ -23,10 +23,10 @@ It also have a theme changer mode, so that you can change the theme as you like 
 
 ## Screenshots
 ### Light Mode
-![](./src/Screenshot%201.png)
+![Screenshot 1](https://user-images.githubusercontent.com/92782806/211467661-a4687bc2-d464-4a08-9288-3b25082285d7.png)
 
 ### Dark Mode
-![](./src/Screenshot%202.png)
+![Screenshot 2](https://user-images.githubusercontent.com/92782806/211467720-12544925-af58-440c-836a-426308b7db30.png)
 
 
 ## Feedback
